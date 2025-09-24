@@ -6,7 +6,7 @@ import About from "./pages/about";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
-import ThemeButton from "./components/Themebtn";
+import ThemeButton from "./Components/Themebtn";
 
 function App() {
   return (
