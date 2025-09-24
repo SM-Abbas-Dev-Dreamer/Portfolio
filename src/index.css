@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --bg: #f5deb3;
+  --button-color: #792e03;
+  --h4: #555;
+  --h4: #792e03;
+  --p:#00000081;
+  --span: #333;
+  --span2: brown;
+  --tag:#dfab8d86;
+  --btn2: #98694D;
+  --btn2-hover: #ec5c09;
+  --hamburger:#2c2828;
+}
+
+.dark-theme {
+  --bg: #030014;
+  --button-color: #5e04c5;
+  --h4: #5e04c5;
+  --p:#555;
+  --span: #eee;
+  --span2: #00bcd4;
+  --tag:#00bbd444;
+  --btn2: #00bcd4;
+  --btn2-hover: #0258a8;
+  --hamburger:#ddd;
+  --hamburger-color:#e77d03;
+}
+p{
+   background: linear-gradient(to right, #444 0, #fff 10%, #444 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine3 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+body{
+    background: #030014;
+    color: white;
+     font-family: "Poppins", sans-serif;
+   background: var(--bg);
+}
+.glow-2 {
+  position: absolute;
+  bottom: -50px;
+  right: 150px;
+  width: 150px;
+  height: 100px;
+  background: #ffffff;
+  filter: blur(100px);
+  z-index: -1;
+}
+/* CSS HEX */
+/* --blue-gem: #5e11b2;
+--royal-blue: #4364f5;
+--black-pearl: #060418;
+--east-bay: #4a4e8c;
+--valhalla: #271e58;
+--chatelle: #bab3c5;
+--indigo: #5364c4;
+--blue-ribbon: #1544f1;
+--haiti: #120f33; */
+
+ /* background: #4da6ff;
+  background: #98694D; */
+
+
+   /* color: #5e04c5;
+  color: #792e03; */

@@ -1,0 +1,388 @@
+.skills-page {
+  padding: 20px;
+  text-align: center;
+}
+.skills-page h1{
+  font-size: 2.9rem;
+  margin: 50px 0; 
+  background: linear-gradient(to right, #444 0, #fff 10%, #444 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine3 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  
+}
+.skills-page p{
+  background: linear-gradient(to right, #444 0, #fff 10%, #444 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine3 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Bar Skills */
+.bar-skills {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.bar-skill {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 10px  auto;
+}
+
+.bar-skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.bar-skill-img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.bar {
+  width: 100%;
+
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #00c9ff;
+  background: #00c9ff;
+  transition: width 0.3s ease;
+}
+
+/* Circle Skills */
+.skills-container {
+  flex: 1 1 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 column */
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+}
+
+.skill {
+  text-align: center;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle-inner {
+  width: 130px;
+  height: 130px;
+  background: var(--bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-progress {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 📱 Responsive breakpoints */
+@media (max-width: 1024px) {
+  .skills-section {
+    gap: 30px;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .circle-inner {
+    width: 110px;
+    height: 110px;
+  }
+  .skill-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container{
+    width: 90%;
+  }
+  .bar-skills{
+    width: 90%;
+  }
+  .skills-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bar-skills,
+  .skills-container {
+    max-width: 100%;
+  }
+  .skill-progress {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    /* grid-template-columns: 1fr; */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar-skills{
+    width: 100%;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .circle-inner {
+    width: 90px;
+    height: 90px;
+  }
+  .skill-img {
+    width: 35px;
+    height: 35px;
+  }
+  .bar-skill-header {
+    font-size: 14px;
+  }
+}
+.education{
+  position: relative;
+}
+.education::before{
+  content: "";
+position: absolute;
+  width: 7px;
+  height: 80%;
+  top: 20%;
+  left: 50%;
+  background: grey;
+}
+.education h1{
+  font-size: 3.5rem;
+      background: linear-gradient(to right, #444 0, #fff 10%, #444 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine3 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+.education-section{
+  position: relative;
+  width: 50%;
+  height: 200px;
+}
+.education-section.second{
+  left: 50%;
+}
+.education-section .inner-box{
+  position: absolute;
+  padding: 0px 40px ;
+  right: 10%;
+  width: 70%;
+  text-align: left;
+   background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  color: #fff; /* Text visible on dark background */
+  border-radius: 15px;
+}
+.education-section .inner-box h3{
+  font-size: 22px;
+  color: white;
+  color: var(--span2);
+}
+.education-section .inner-box h4{
+  font-style: 14px;
+  color: var(--span);
+}
+.education-section .inner-box p{
+  font-size: 14px;
+  padding: 10px 0;
+  color: var(--p);
+}
+.education-section .inner-box::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: black;
+   background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  color: #fff; /* Text visible on dark background */
+}
+
+.education-section.second .inner-box::before{
+  left: -10px;
+}
+.education-section .digree-circle{
+  width: 60px ;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+  background: var(--span);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-section .digree-circle i{
+  font-size: 24px;
+  color: var(--span2);
+}
+@media(min-width: 768px){
+  .education-section.second .digree-circle{
+    left: -33%;
+  }
+  
+}
+@media (max-width: 900px){
+   .education-section {
+    width: 100%;         /* full width le */
+    padding-left: 50px;  /* thoda space line ke liye */
+    height: auto;    
+    margin: 50px 50px;    /* height auto ho jaye */
+  }
+  
+  .education-section.second {
+    left: 0; /* dono sections ek hi side aa jayenge */
+  }
+  
+  .education-section .inner-box {
+    position: relative;
+    padding: 20px;
+    right: auto;
+  }
+  
+  .digree-circle {
+    left: -50px; 
+    top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .digree-circle.second { 
+    left: -50px; 
+  }
+    .education-section.second .digree-circle{
+      left: -100px;
+    }
+    .education::before {
+    left: 30px; /* line ko left side par shift kar diya */
+  }
+  .education-section .inner-box::before{
+    left: -10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== Responsive Timeline (Education Section) ========== */
+@media (max-width: 768px) {
+  .education h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .education::before {
+    left: 30px; /* line ko left side par shift kar diya */
+  }
+
+  .education-section {
+    width: 100%;         /* full width le */
+    padding-left: 50px;  /* thoda space line ke liye */
+    height: auto;    
+    margin: 50px 50px;    /* height auto ho jaye */
+  }
+  
+  .education-section.second {
+    left: 0; /* dono sections ek hi side aa jayenge */
+  }
+  
+  .education-section .inner-box {
+    position: relative;
+    padding: 20px;
+    right: auto;
+  }
+  
+  .digree-circle {
+    left: -50px; 
+    top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .digree-circle.second {
+    left: -50px; 
+  }
+    .education-section.second .digree-circle{
+      left: -100px;
+    }
+}
+
+@media (max-width: 480px) {
+  .education h1 {
+    font-size: 1.5rem;
+  }
+  
+  .education-section .inner-box {
+    padding: 15px;
+  }
+}

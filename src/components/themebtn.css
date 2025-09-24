@@ -1,0 +1,26 @@
+.themebtn{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    outline: none;
+      background: var(--hamburger); /* Transparent white */
+  border-radius: 16px;
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  padding: 20px;
+  color: var(--hamburger-color); /* Text visible on dark background */
+}
+.themebtn i{
+    font-size: 22px;
+    font-weight: 600;
+}
