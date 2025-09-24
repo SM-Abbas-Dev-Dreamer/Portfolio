@@ -1,10 +1,10 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 import "./Style/about.css";
+
 import Mongodb from "../assets/mongodb.png";
 import Mysql from "../assets/mysql.png";
 import Nodejs from "../assets/nodejs.png";
@@ -14,22 +14,22 @@ import Css from "../assets/css.png";
 import Javascript from "../assets/javascript.png";
 import Reactjs from "../assets/reactjs.png";
 import Threejs from "../assets/threejs.png";
-// import Swipejs from "../assets/swipejs.png";
 
-const about = () => {
-     useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        once: false,    // whether animation should happen only once - while scrolling down
-      });
-    }, []);
+const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
     <>
-    <div className="glow"></div>
+      <div className="glow"></div>
       <div className="margin2"></div>
       <h1 className="About-h1">About Me</h1>
       <div className="about-section">
-        <div className="about-first-section " data-aos="fade-right">
+        <div className="about-first-section" data-aos="fade-right">
           <h2>Who Am I?</h2>
           <p>
             I am a passionate web developer with a love for creating dynamic and
@@ -38,85 +38,86 @@ const about = () => {
             various web technologies.
           </p>
           <div className="about-sections-buttons">
-           <Link to="/projects" className="btn btn-primary">View Projects</Link>
-
+            <Link to="/projects" className="btn btn-primary">
+              View Projects
+            </Link>
           </div>
         </div>
+
         <div className="about-scond-section">
           <h2>My Skills</h2>
-          <div className="skill-box"data-aos="fade-up">
-            <ul calssName="skill-ul"  >
-              <h4>Languges</h4>
+          <div className="skill-box" data-aos="fade-up">
+            
+            <h4>Languages</h4>
+            <ul className="skill-ul">
               <li>
                 <div className="skill-logo">
-                  <img src={Html} alt="" />
+                  <img src={Html} alt="HTML" />
                 </div>
                 HTML
               </li>
               <li>
                 <div className="skill-logo">
-                  <img src={Css} alt="" />
+                  <img src={Css} alt="CSS" />
                 </div>
                 CSS
               </li>
               <li>
                 <div className="skill-logo">
-                  <img src={Javascript} alt="" />
+                  <img src={Javascript} alt="JavaScript" />
                 </div>
                 JavaScript
               </li>
             </ul>
 
-            <ul calssName="skill-ul skill-ul-down">
-              <h4>Library</h4>
+            <h4>Library</h4>
+            <ul className="skill-ul skill-ul-down">
               <li>
                 <div className="skill-logo">
-                  <img src={Reactjs} alt="" />
+                  <img src={Reactjs} alt="React" />
                 </div>
                 React
               </li>
               <li>
                 <div className="skill-logo">
-                  <img src={Threejs} alt="" />
+                  <img src={Threejs} alt="Three.js" />
                 </div>
                 Three Js
               </li>
-              <li>
-                {/* <div className="skill-logo"><img src={Swipejs} alt="" /></div>Swipe JS */}
-              </li>
             </ul>
 
-            <ul calssName="skill-ul skill-ul-down">
-              <h4>Backend</h4>
+            <h4>Backend</h4>
+            <ul className="skill-ul skill-ul-down">
               <li>
                 <div className="skill-logo">
-                  <img src={Nodejs} alt="" />
+                  <img src={Nodejs} alt="Node.js" />
                 </div>
                 Node Js
               </li>
               <li>
                 <div className="skill-logo">
-                  <img src={Expressjs} alt="" />
+                  <img src={Expressjs} alt="Express" />
                 </div>
                 Express JS
               </li>
             </ul>
 
-            <ul calssName="skill-ul">
-              <h4>Database</h4>
+            <h4>Database</h4>
+            <ul className="skill-ul">
               <li>
                 <div className="skill-logo">
-                  <img src={Mongodb} alt="" />
+                  <img src={Mongodb} alt="MongoDB" />
                 </div>
                 MongoDB
               </li>
               <li>
                 <div className="skill-logo">
-                  <img src={Mysql} alt="" />
+                  <img src={Mysql} alt="MySQL" />
                 </div>
                 My SQL
               </li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -124,4 +125,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

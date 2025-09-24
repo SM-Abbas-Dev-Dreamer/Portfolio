@@ -44,24 +44,24 @@ const home = () => {
             <p>Also touch on social media</p>
             <div className="social-media-links">
               <a href="https://www.facebook.com/profile.php?id=100088920522460">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a href="https://www.instagram.com/m.abbas_niqvi/">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
               <a href="https://x.com/SM_Abbas23">
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-x-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
               </a>
               <a href="syedmuhammadabbasniqvi@gmail.com">
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-google"></i>
+                <i className="fa-brands fa-google"></i>
+                <i className="fa-brands fa-google"></i>
               </a>
               <a href="https://www.linkedin.com/in/sm-abbas-48a8982a9/">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
           </div>

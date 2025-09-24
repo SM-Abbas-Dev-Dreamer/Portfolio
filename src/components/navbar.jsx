@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Link ki jagah NavLink
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -11,99 +11,54 @@ function Navbar() {
 
             <div className={`nav-links ${isOpen ? "open" : ""}`}>
                 <div className="single-nav-link" id="home-link">
-                    <span>
-                        <NavLink 
-                            to="/" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Home
-                        </NavLink>
-                        <NavLink 
-                            to="/" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Home
-                        </NavLink>
-                    </span>
+                    <NavLink 
+                        to="/" 
+                        onClick={() => setIsOpen(false)} 
+                        className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
+                        Home
+                    </NavLink>
                 </div>
                 <div className="single-nav-link" id="about-link">
-                    <span>
-                        <NavLink 
-                            to="/about" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            About
-                        </NavLink>
-                        <NavLink 
-                            to="/about" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            About
-                        </NavLink>
-                    </span>
+                    <NavLink 
+                        to="/about" 
+                        onClick={() => setIsOpen(false)} 
+                        className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
+                        About
+                    </NavLink>
                 </div>
                 <div className="single-nav-link" id="projects-link">
-                    <span>
-                        <NavLink 
-                            to="/projects" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Projects
-                        </NavLink>
-                        <NavLink 
-                            to="/projects" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Projects
-                        </NavLink>
-                    </span>
+                    <NavLink 
+                        to="/projects" 
+                        onClick={() => setIsOpen(false)} 
+                        className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
+                        Projects
+                    </NavLink>
                 </div>
                 <div className="single-nav-link" id="skills-link">
-                    <span>
-                        <NavLink 
-                            to="/skills" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Skills
-                        </NavLink>
-                        <NavLink 
-                            to="/skills" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Skills
-                        </NavLink>
-                    </span>
+                    <NavLink 
+                        to="/skills" 
+                        onClick={() => setIsOpen(false)} 
+                        className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
+                        Skills
+                    </NavLink>
                 </div>
                 <div className="single-nav-link" id="contact-link">
-                    <span>
-                        <NavLink 
-                            to="/contact" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Contact
-                        </NavLink>
-                        <NavLink 
-                            to="/contact" 
-                            onClick={() => setIsOpen(false)} 
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
-                            Contact
-                        </NavLink>
-                    </span>
+                    <NavLink 
+                        to="/contact" 
+                        onClick={() => setIsOpen(false)} 
+                        className={({ isActive }) => (isActive ? "active-link" : "")}
+                    >
+                        Contact
+                    </NavLink>
                 </div>
             </div>
 
             <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-                <i class="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars"></i>
             </div>
         </nav>
     );

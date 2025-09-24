@@ -122,7 +122,7 @@ function Skills() {
       <div className="education">
         <h1 data-aos="fade-up" data-aos="fade-up" >Education</h1>
         <div className="education-section" data-aos="fade-up">
-          <div className="digree-circle"><i class="fa-solid fa-user-graduate"></i></div>
+          <div className="digree-circle"><i className="fa-solid fa-user-graduate"></i></div>
           <div className="inner-box">
             <h3>Bachelor of Science in Computer Science</h3>
             <h4>Government Islamia College, Civil Lines, Lahore</h4>
@@ -134,7 +134,7 @@ function Skills() {
         </div>
         <div className="education-section second"data-aos="fade-up">
           <div className="inner-box">
-          <div className="digree-circle second"><i class="fa-solid fa-user-graduate"></i></div>
+          <div className="digree-circle second"><i className="fa-solid fa-user-graduate"></i></div>
             <h3>Intermediate in Computer Science (ICS)</h3>
             <h4>PUNJAB GROUPS OF COLLEGES Shahdra campus</h4>
             <p>

@@ -10,17 +10,13 @@ function ThemeButton() {
   };
 
   return (
-    <>
-      <button className="themebtn" onClick={toggleTheme}>
-        {" "}
-        {dark ? (
-          <i class="fa-solid fa-sun"></i>
-        ) : (
-          <i class="fa-solid fa-moon"></i>
-        )}{}
-        
-      </button>
-    </>
+    <button className="themebtn" onClick={toggleTheme}>
+      {dark ? (
+        <i className="fa-solid fa-sun"></i>
+      ) : (
+        <i className="fa-solid fa-moon"></i>
+      )}
+    </button>
   );
 }
 
