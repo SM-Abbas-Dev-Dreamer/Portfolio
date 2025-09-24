@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Link ki jagah NavLink
+import { Link } from "react-router-dom"; 
 import "./Navbar.css";
 
 function Navbar() {

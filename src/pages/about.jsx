@@ -16,7 +16,7 @@ import Reactjs from "../assets/reactjs.png";
 import Threejs from "../assets/threejs.png";
 // import Swipejs from "../assets/swipejs.png";
 
-const about = () => {
+const About = () => {
      useEffect(() => {
       AOS.init({
         duration: 1000, // animation duration in ms
@@ -124,4 +124,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
