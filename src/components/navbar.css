@@ -90,6 +90,8 @@
   color: var(--h4);
   font-weight: 600;
   transition: 0.3s;
+  text-decoration: none;
+  font-size: 19px;
 }
 .single-nav-link:hover span a{
   color: #fff;
