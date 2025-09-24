@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import ThemeButton from "./components/Themebtn";
+import sK
 
 function App() {
   return (
