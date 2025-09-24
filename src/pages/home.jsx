@@ -5,7 +5,7 @@ import "./Style/home.css";
 import my_img from "../assets/4.png";
 import CV from "../assets/CV.pdf";
 
-const home = () => {
+const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -89,4 +89,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

@@ -120,7 +120,7 @@ function Skills() {
         </div>
       </div>
       <div className="education">
-        <h1 data-aos="fade-up" data-aos="fade-up" >Education</h1>
+        <h1  data-aos="fade-up" >Education</h1>
         <div className="education-section" data-aos="fade-up">
           <div className="digree-circle"><i className="fa-solid fa-user-graduate"></i></div>
           <div className="inner-box">
