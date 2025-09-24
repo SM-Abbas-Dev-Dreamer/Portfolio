@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/about";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Skills from "./pages/Skills";
-import ThemeButton from "./Components/Themebtn";
+import Navbar from "./Components/Navbar.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/about.jsx";
+import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
+import Skills from "./pages/Skills.jsx";
+import ThemeButton from "./Components/Themebtn.jsx";
 
 function App() {
   return (
